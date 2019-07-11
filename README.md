@@ -1,5 +1,9 @@
 # test
 
+## Bug
+The path to the entryfile in `vue.config.js` has to be absolute. Otherwise Polyfills are silently not included.
+This minimal reproduction app cannot use Promise in IE11 (used in `src/main.js` to log a message to the console).
+
 ## Project setup
 ```
 yarn install

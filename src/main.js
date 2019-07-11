@@ -6,3 +6,5 @@ Vue.config.productionTip = false
 new Vue({
   render: h => h(App),
 }).$mount('#app')
+
+Promise.resolve('hello').then(v => console.log(v));
